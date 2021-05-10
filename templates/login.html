@@ -1,0 +1,36 @@
+{% extends "index.html" %}
+
+{% block title %} Login Page {% endblock %}
+
+{% block content %}
+
+    <div class="card-wrapper">
+        <div class="card">
+        
+            <h1 id="account-creation"> Log In </h1>
+
+                <form name="login-form">
+
+                    <div class="info">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="field" required>
+                    </div>
+
+                    
+                    <div class="info" id="last-info">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" class="field" required>
+                    </div>   
+                    
+                    <div class="info">
+                        <input type="submit" value="Log In" class="btn" id='login-button'>
+                    </div>
+                </form>
+        
+        </div>
+        <h4 class="error-message">There was something wrong with your credentials. Please try again!</h4>
+    </div>
+
+
+
+{% endblock %}
